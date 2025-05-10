@@ -1,0 +1,18 @@
+.home-page {
+  .search-container {
+    mat-form-field {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+
+  table {
+    width: 100%;
+    th {
+      font-weight: 600;
+    }
+    td {
+      padding: 8px;
+    }
+  }
+}

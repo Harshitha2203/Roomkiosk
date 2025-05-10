@@ -1,0 +1,68 @@
+
+ <div class="container-fluid landing-page">
+  <!-- Hero Section -->
+  <section class="hero-section text-center py-5">
+    <div class="hero-content">
+      <h1 class="display-1 text-uppercase">Room Kiosk</h1>
+      <p class="lead">
+        Discover luxury rooms tailored to your comfort and style.
+      </p>
+      <button class="btn btn-gold btn-lg">Book Now</button>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features-section py-5">
+    <div class="container text-center">
+      <h2 class="section-title text-uppercase">Why Choose Us?</h2>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="feature-card">
+            <img src="assets/1.jpeg" width="300px" alt="Icon 1" class="feature-icon" />
+            <h3>Luxury Rooms</h3>
+            <p>Experience unmatched comfort and elegance in every stay.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card">
+            <img src="assets/2.jpeg" alt="Icon 2" class="feature-icon" />
+            <h3>Exclusive Service</h3>
+            <p>Enjoy personalized services designed for your convenience.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card">
+            <img src="assets/3.jpeg" alt="Icon 3" class="feature-icon" />
+            <h3>Easy Booking</h3>
+            <p>Effortlessly book your stay through our platform and elegance in every stay.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Available Rooms Section -->
+  <section class="rooms-section py-5">
+  <div class="container">
+    <h2 class="section-title text-center text-uppercase">Available Rooms</h2>
+    <div class="row mt-4">
+      <!-- Room Card -->
+      <div class="col-lg-4 col-md-6 mb-4" *ngFor="let room of rooms">
+        <div class="room-card h-100 d-flex flex-column">
+          <img [src]="room.image" [alt]="room.name" class="room-image img-fluid rounded-top" />
+          <div class="room-details p-3 d-flex flex-column justify-content-between">
+            <div>
+              <h3 class="mb-2">{{ room.name }}</h3>
+              <p class="mb-3">{{ room.description }}</p>
+            </div>
+            <button class="btn btn-gold">View Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+
+  

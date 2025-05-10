@@ -1,0 +1,62 @@
+.admin-landing-page {
+  header {
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+    p {
+      color: #6c757d;
+    }
+  }
+
+  .stats-section {
+    .stat-card {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .stat-value {
+        font-size: 2rem;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .main-content-section {
+    .content-card {
+      background-color: #ffffff;
+      border: 1px solid #eaeaea;
+
+      h3 {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+      }
+
+      .activities-list {
+        .activity-item {
+          font-size: 0.95rem;
+
+          .activity-time {
+            font-weight: 600;
+            color: #6c757d;
+          }
+        }
+      }
+
+      button {
+        width: 100%;
+        padding: 0.75rem;
+        font-size: 1rem;
+        border-radius: 5px;
+        &:hover {
+          transform: scale(1.02);
+          transition: transform 0.2s;
+        }
+      }
+    }
+  }
+}
